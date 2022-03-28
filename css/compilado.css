@@ -1,0 +1,62 @@
+h1 {
+  color: red; }
+
+h2 {
+  color: blue; }
+
+body {
+  background-color: #ceb2ca; }
+
+header {
+  grid-row: row;
+  grid-area: header; }
+
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  color: #4f04a5;
+  font-style: italic;
+  font-weight: bolder; }
+
+nav {
+  grid-area: nav; }
+
+ul li {
+  display: grid;
+  font-size: 1rem;
+  list-style-type: initial;
+  color: #050457; }
+
+footer {
+  color: ivory;
+  text-align: center;
+  line-height: 4rem;
+  border: solid 4px white;
+  grid-area: footer; }
+
+.fondoIma {
+  background-image: url(../img/libros-de-izquierda-para-leer.jpg);
+  background-size: cover;
+  text-align: center; }
+
+.borderIma {
+  border: solid 1rem black;
+  padding: 1rem;
+  display: inline-block;
+  height: 300px;
+  width: 300px; }
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column; }
+  .body {
+    background-color: deepskyblue; } }
+
+@media screen and (max-width: 425px) {
+  .header {
+    flex-direction: column; }
+  .body {
+    background-color: goldenrod; } }
